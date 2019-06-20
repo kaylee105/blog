@@ -10,28 +10,31 @@ code.highlighter-rouge {
     position:relative;
 }
 
+.highlight {
+    position:relative;
+}
 .language-type {
     content:'';
     position: absolute;
     right: 0;
     top: 0;
     background: #458;
-    padding: 5px;
+    padding: 0 5px;
     color: #fff;
 }
 
 .language {
     &-css:after {
         @extend .language-type;
-        content:'css';
+        content:'CSS';
     }
     &-scss:after {
         @extend .language-type;
-        content:'scss';
+        content:'SCSS';
     }
     &-sass:after {
         @extend .language-type;
-        content:'sass';
+        content:'Sass';
     }
     &-javascript:after {
         @extend .language-type;
@@ -39,7 +42,7 @@ code.highlighter-rouge {
     }
     &-html:after {
         @extend .language-type;
-        content:'html';
+        content:'HTML';
     }
 }
 
