@@ -502,7 +502,7 @@ Sass는 기본적인 연산기능을 지원합니다.
    ```
    
    
-####참고
+#### 참고
 
 [Sass Guidelines](https://sass-guidelin.es/ko)
 [Sass 정의하고 사용하기](https://www.codingfactory.net/10110)
