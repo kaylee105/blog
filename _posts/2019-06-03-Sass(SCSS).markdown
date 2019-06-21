@@ -500,6 +500,9 @@ Sass는 기본적인 연산기능을 지원합니다.
    .to:nth-child(1) { width: 20px; }
    .to:nth-child(2) { width: 40px; }
    ```
+   
+   
+****참고
 
 [Sass Guidelines](https://sass-guidelin.es/ko)
 [Sass 정의하고 사용하기](https://www.codingfactory.net/10110)
