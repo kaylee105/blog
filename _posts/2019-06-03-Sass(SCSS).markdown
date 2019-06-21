@@ -501,7 +501,7 @@ Sass는 기본적인 연산기능을 지원합니다.
    .to:nth-child(2) { width: 40px; }
    ```
 
-[Sass Guidelines]: https://sass-guidelin.es/ko/
-[Sass 정의하고 사용하기]: https://www.codingfactory.net/10110
-[Sass 완전 정복]: https://heropy.blog/2018/01/31/sass/
+[Sass Guidelines](https://sass-guidelin.es/ko)
+[Sass 정의하고 사용하기](https://www.codingfactory.net/10110)
+[Sass 완전 정복](https://heropy.blog/2018/01/31/sass/)
 
