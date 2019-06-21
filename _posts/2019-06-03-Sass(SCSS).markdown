@@ -9,7 +9,7 @@ tag:
 - Scss
 category: blog
 author: Kaylee
-star:true
+star: true
 description: Sass(SCSS)
 ---
 # Sass(SCSS)
