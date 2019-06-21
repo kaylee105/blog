@@ -28,15 +28,15 @@ HTML5 는 Client Side Technology 를 강력하게 지원하는 단순 표현 HTM
 
 ## HTML4 vs HTML5
 
-1. ##### **Syntax (구문)**
+1. **Syntax (구문)**
 
-2. ##### **Language (언어)**
+2. **Language (언어)**
 
-3. ##### **API**
+3. **API**
 
 크게 세가지 항목으로 나뉜다.
 
-##### 1. Syntax(구문)
+### 1. Syntax(구문)
 
 - DOCTYPE
 
@@ -89,17 +89,17 @@ HTML5 는 Client Side Technology 를 강력하게 지원하는 단순 표현 HTM
   ```
 ------
 
-##### 2. Language (언어)
+### 2. Language (언어)
 
 - 새롭게 추가된 `Sementic Element`
 
-  ##### **Sementic Element*
+  #### **Sementic Element*
 
   > HTML4는 아무런 의미 없는 <div> 태그를 사용하여 개발자들이 붙이는 id값에 따라 문서 내용을 구분하여 문서의 구조를 파악하기 쉽지 않았습니다. HTML5는 `Sementic Element`를 사용하여 **실제내용을 쉽게 구분**할수 있으며 **문서 구조를 파악**하는데 용이합니다.
 
   [^Sementic Web]: '의미론적인 웹'
 
-  ##### **Sementic Mark-up을 통해 얻을 수 있는 이점**
+  #### **Sementic Mark-up을 통해 얻을 수 있는 이점**
 
   - 코드의 가독성 향상
   - Outline을 통한 Skip Navigation의 자동 생성 (iOS Safari의 Reader와 같은 기능)
@@ -120,7 +120,7 @@ HTML5 는 Client Side Technology 를 강력하게 지원하는 단순 표현 HTM
   | Figure     | 그림, 비디오와 같은 포함된 컨텐츠의 Caption 을 표시할때 사용한다. |
   | Figcaption | 캡션에 사용한다.                                             |
 
-  ###### Browser Support : Chrome,ie9,Firefox,Safari,Opera
+  #### Browser Support : Chrome,ie9,Firefox,Safari,Opera
 
   ```html
   <header>
