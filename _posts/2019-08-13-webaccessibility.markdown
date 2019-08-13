@@ -1,5 +1,5 @@
 ---
-title: "web accessibility"
+title: "Web Accessibility"
 layout: post
 date: 2019-08-13 21:09
 image: /assets/images/markdown.jpg
@@ -112,10 +112,7 @@ description: 웹 접근성(web accessibility)
 
 
 
+##### 참고
 
-
-###### 참고 사이트
-
-[웹 접근성 연구소]: https://www.wah.or.kr:444/	"https://www.wah.or.kr:444/"
-[NULI]: https://nuli.navercorp.com/sharing/a11y	"https://nuli.navercorp.com/sharing/a11y"
-
+[웹 접근성 연구소](https://www.wah.or.kr:444/)
+[NULI](https://nuli.navercorp.com/sharing/a11y)
