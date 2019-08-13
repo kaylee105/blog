@@ -64,9 +64,10 @@ description: 웹 접근성(web accessibility)
 
 4. W3C Validation을 통과하는가?
 
-5. <table에 <caption>이 적절하게 선언되었는가?
+5. <table에 <caption이 적절하게 선언되었는가?
 
-6. <thead>,<tbody>,<tfoot>으로 그룹핑 되어 있는가? (th로 그룹핑 안될경우 <thead>생략가능, tbody만 있을 경우 <tbody>생략 가능)
+6. <thead,<tbody,<tfoot으로 그룹핑 되어 있는가? (th로 그룹핑 안될경우 <thead생략가능, tbody만 있을 경우 <tbody생략 가능)
+    
 
 7. 표의 머릿글은 <th>로 마크업 했으며 scope 속성을 제공하는가?
 
