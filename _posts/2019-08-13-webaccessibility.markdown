@@ -1,5 +1,5 @@
 ---
-title: "Web Accessibility"
+title: "웹 접근성(Web Accessibility)"
 layout: post
 date: 2019-08-13 21:09
 image: /assets/images/markdown.jpg
