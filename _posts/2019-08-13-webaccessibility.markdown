@@ -51,9 +51,10 @@ description: 웹 접근성(web accessibility)
      ### 사례
 
      ![](<https://code.d2.co.kr/kaylee/study/web3.jpg>)
-기존**
+	 
+**기존**
 
-```html5
+```html
 <div id="skipNav">
 	<a class="skipgnb" href="#gnb">Go to GNB</a>
 	<a class="skipcont" href="#container">Go to CONTENTS</a>
@@ -61,7 +62,6 @@ description: 웹 접근성(web accessibility)
 ```
 
 a링크로 이동시 포커스가 선택되지않으므로 스크립트를 이용하여 강제로 주는 방법밖에 없음.
-
 해당컨텐츠내 타이틀영역또는 링크영역으로 포커스줄것.
      
 
