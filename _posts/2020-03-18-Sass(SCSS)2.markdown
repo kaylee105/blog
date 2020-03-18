@@ -229,9 +229,16 @@ abs(-10px) => 10px
 
 - 리스트 및 맵의 데이터 타입을 다루기 위한 함수
 
+
+
+
+참고
+
 [https://code-pervert.tistory.com/16](https://code-pervert.tistory.com/16)
 
 [https://heropy.blog/2018/01/31/sass/](https://heropy.blog/2018/01/31/sass/)
 
 [https://sass-guidelin.es/ko/#section-56](https://sass-guidelin.es/ko/#section-56)
+
+
 
