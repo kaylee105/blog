@@ -1,0 +1,239 @@
+---
+title: "Sass(SCSS) 응용하기"
+layout: post
+date: 2020-03-18 00:00
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- Sass
+- Scss
+category: blog
+author: Kaylee
+star: true
+description: Sass(SCSS)
+---
+# Sass(SCSS) 응용하기
+
+[Sass(SCSS)](https://kaylee105.github.io/Sass(SCSS)/)
+
+## 조건문에 대해서
+
+#### @if, @else if, @else
+
+JS의 if ~ else 문과 유사한 조건문을 처리할 수 있습니다.
+
+```scss
+@mixin tag-type($val) {
+	@if $val == new {
+		color: red;
+	} @else if $val == sale {
+		color: yellow;
+	} @else if $val == event {
+		color: green;
+	} @else {
+		color: black;
+	}
+}
+
+.tag {
+  @include tag-type(new)
+}
+```
+
+**Compile​**
+
+```css
+.tag {
+  color: red;
+}
+```
+
+#### @while, @for, @each 
+
+@while 반복문 
+
+조건값까지만 반복
+
+```scss
+$i : 10;
+@while $i > 0 {
+	.box-#{$i} { width : 2em * $i; }
+	$i : $i - 3;
+}
+```
+
+**Compile**
+
+```css
+.box-10 {
+  width: 20em;
+}
+.box-7 {
+  width: 14em;
+}
+.box-4 {
+  width: 8em;
+}
+.box-1 {
+  width: 2em;
+}
+```
+
+@for 반복문
+
+to 키워드는 전(미만)까지를 반복하며, through 키워드는 끝(이하)까지 반복한다.
+
+```scss
+@for $i from 1 through 5 {
+    .ico-car#{$i} { background-position:0 -10px * $i + 10px; }
+}
+```
+
+**Compile**
+
+```css
+.ico-car1 {
+  background-position: 0 0px;
+}
+.ico-car2 {
+  background-position: 0 -10px;
+}
+.ico-car3 {
+  background-position: 0 -20px;
+}
+.ico-car4 {
+  background-position: 0 -30px;
+}
+.ico-car5 {
+  background-position: 0 -40px;
+}
+```
+
+@each 배열을 이용해 맵핑하기
+
+List 반복(데이터를 직접 나열)
+
+```scss
+@each $temp-img in cheese, potato, pepperoni {
+	.pizza-#{$temp-img}{
+		background-image:url('/img/#{$temp-img}.png')
+	}
+}
+```
+
+**Compile**
+
+```css
+.pizza-cheese {
+  background-image: url("/img/cheese.png");
+}
+
+.pizza-potato {
+  background-image: url("/img/potato.png");
+}
+
+.pizza-pepperoni {
+  background-image: url("/img/pepperoni.png");
+}
+```
+
+Map
+
+```scss
+$CBrand:red;
+$CBrand2:blue;
+
+$state-btn: (
+    wish: (color: $CBrand),
+    buy: (color: $CBrand2),
+    soldout: (color: yellow),
+);
+
+@each $key, $value  in $state-btn {
+    .ico-#{$key} {
+        background-color: map-get($value, color);
+    }
+}
+```
+
+**Compile**
+
+```css
+.ico-wish {
+  background-color: red;
+}
+.ico-buy {
+  background-color: blue;
+}
+.ico-soldout {
+  background-color: yellow;
+}
+```
+
+
+
+## 내장함수에 대해서
+
+- 색상(RGB / HSL / Opacity) 함수
+
+![img](http://code.d2.co.kr/kaylee/color.png)
+
+**Compile**
+
+```css
+.box.box1{background:#ff6c00;}
+.box.box2{background:#f66;}
+.box.box3{background:#900;}
+.box.box5{background:#e61a1a;}
+.box.box6{background:gray;}
+.box.box7{background:#0FF;}
+.box.box8{background:rgba(255,0,0,0.2);}
+.box.box4,.box.box9,.box.box10{background:red;}
+.box.box11,.box.box12{background:rgba(255,0,0,0.5);}
+```
+
+| **mix(색1, 색2)**                        | 색1과 색2를 섞은 색으로 나타납니다. |
+| :--------------------------------------- | ----------------------------------- |
+| **lighten(색, %)**                       | 색1을 %만큼 밝게 만들어줍니다.      |
+| **darken(색, %)**                        | 색을 %만큼 어둡게 만들어줍니다.     |
+| **saturate(색, %)**                      | 색상의 채도를 % 만큼 올립니다.      |
+| **desaturate(색, %)**                    | 색상의 채도를 % 만큼 올립니다.      |
+| **grayscale(색)**                        | 색상의 회색으로 변환합니다          |
+| **invert(색)**                           | 색을 반전시킵니다.                  |
+| **rgba(색, 알파값)**                     | 알파값(0-1) 투명도 지정             |
+| **opacify(색,%) , fade-in(색,%)**        | 색상을 더 불투명하게 만듭니다.      |
+| **transparentize(색,%), fade-out(색,%)** | 색상을 더 투명하게 만든다.          |
+
+- 숫자 및 문자열 함수
+
+```scss
+//숫자값을 %로 변환
+percentage(0.2)          => 20%
+percentage(100px / 50px) => 200%
+
+//소숫점 이하 반올림
+round(10.4px) => 10px
+round(10.6px) => 11px
+
+//소숫점 이하 올림
+ceil(10.4px) => 11px
+ceil(10.6px) => 11px
+
+//소숫점 이하 절사
+floor(10.4px) => 10px
+floor(10.6px) => 10px
+
+//절대값 취득
+abs(10px) => 10px
+abs(-10px) => 10px
+```
+
+- 리스트 및 맵의 데이터 타입을 다루기 위한 함수
+
+
+
+[https://code-pervert.tistory.com/16]()
+
+[https://heropy.blog/2018/01/31/sass/](https://heropy.blog/2018/01/31/sass/)
+
+[https://sass-guidelin.es/ko/#section-56](
