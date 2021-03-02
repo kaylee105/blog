@@ -247,7 +247,7 @@ $mobile: 768px;
 
 이는 gulp를 이용하여 중복된 구문을 제거할수있다. 
 
-[gulp-group-css-media-queries]: https://www.npmjs.com/package/gulp-group-css-media-queries
+[gulp-group-css-media-queries](https://www.npmjs.com/package/gulp-group-css-media-queries)
 
 ```javascript
 var gulp = require('gulp');
@@ -282,7 +282,7 @@ gulp.task('default', function () {
 
 부모의 폰트 크기가 20px이라면 1em = 20px, 3em =60px으로 커지게 됨
 
-[PXtoEM]: http://pxtoem.com/
+[PXtoEM] (http://pxtoem.com/)
 
 ```scss
 $font-size: 16; 
@@ -393,5 +393,4 @@ html { font-size: 62.5%; }
 
 참고
 
-[vw, vh, vmin, vmax, em, rem 속성]: https://nykim.work/85
-
+[vw, vh, vmin, vmax, em, rem 속성] (https://nykim.work/85)
