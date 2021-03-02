@@ -14,6 +14,7 @@ tag:
 
 category: blog
 author: Kaylee
+star: true
 description: responsive web, Media Queries , viewport
 ---
 # 반응형 웹(Responsive Web)
