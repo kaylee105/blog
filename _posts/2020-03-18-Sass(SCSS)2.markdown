@@ -175,7 +175,7 @@ $state-btn: (
 
 - 색상(RGB / HSL / Opacity) 함수
 
-![img](http://code.d2.co.kr/kaylee/study/color.png)
+![img](http://code.d2.co.kr/kaylee/images/color.png)
 
 **Compile**
 
