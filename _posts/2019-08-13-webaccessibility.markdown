@@ -50,7 +50,7 @@ description: 웹 접근성(web accessibility)
 
      ### 사례
 
-     ![](<https://code.d2.co.kr/kaylee/study/web3.jpg>)
+     ![](<https://code.d2.co.kr/kaylee/images/web3.jpg>)
 	 
 **기존**
 
@@ -71,7 +71,7 @@ a링크로 이동시 포커스가 선택되지않으므로 스크립트를 이�
 
      ### 사례
 
-     ![](<https://code.d2.co.kr/kaylee/study/web4.PNG>)
+     ![](<https://code.d2.co.kr/kaylee/images/web4.PNG>)
 
 4. W3C Validation을 통과하는가?
 
@@ -93,15 +93,15 @@ a링크로 이동시 포커스가 선택되지않으므로 스크립트를 이�
 ## 접근성 평가도구
 
 1. **N-WAX**
-   ![](<https://code.d2.co.kr/kaylee/study/web6.png>)
+   ![](<https://code.d2.co.kr/kaylee/images/web6.png>)
 
-![](<https://code.d2.co.kr/kaylee/study/web5.PNG>)
+![](<https://code.d2.co.kr/kaylee/images/web5.PNG>)
 
 
 
 2. **모바일 스크린리더(ios/안드로이드)**
 
-![](<https://code.d2.co.kr/kaylee/study/web7.PNG>)
+![](<https://code.d2.co.kr/kaylee/images/web7.PNG>)
 
 3. UIA Varify
    플래시, 실버라이트 등 애플리케이션의 접근성 정보를 탐색할 수 있는 도구
