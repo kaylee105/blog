@@ -94,7 +94,7 @@ description: responsive web, Media Queries , viewport
 
 ### 구문
 
-<img src="http://code.d2.co.kr/kaylee/study/media.png" alt="img">
+<img src="http://code.d2.co.kr/kaylee/images/media.png" alt="img">
 
 미디어 쿼리 구문은 '미디어 타입 / 논리 연산자 / 속성' 으로 이루어진다.
 
