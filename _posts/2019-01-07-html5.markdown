@@ -107,7 +107,7 @@ HTML5 는 Client Side Technology 를 강력하게 지원하는 단순 표현 HTM
   - 유지보수에 용이하다.
   - 웹 접근성이 강화된다.
 
-  ![img](https://code.d2.co.kr/kaylee/study/sementic.png)
+  ![img](https://code.d2.co.kr/kaylee/images/sementic.png)
 
   | Element    | 설명                                                         |
   | ---------- | :----------------------------------------------------------- |
