@@ -1,4 +1,3 @@
-
 ---
 title: "Github 블로그 만들기"
 layout: post
@@ -15,7 +14,6 @@ author: Kaylee
 star: true
 description: github,blog
 ---
-
 
 # Github 블로그 만들기
 
