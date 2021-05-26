@@ -55,7 +55,7 @@ email: syungkim105@gmail.com
 
 authors:
     johndoe:
-        name: Kim seoyi
+        name: seori
         bio: A Man who travels the world eating noodles
         external-image: false
         picture: assets/images/profile.jpg
@@ -109,7 +109,7 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://kaylee105.github.io/blog
 
 compress_html:
     ignore:
