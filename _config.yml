@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://kaylee105.github.io/blog
+url: https://kaylee105.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -55,7 +55,7 @@ email: syungkim105@gmail.com
 
 authors:
     johndoe:
-        name: Kim seoyi
+        name: seori
         bio: A Man who travels the world eating noodles
         external-image: false
         picture: assets/images/profile.jpg
