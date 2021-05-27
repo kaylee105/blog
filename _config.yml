@@ -109,7 +109,7 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-    base_url: /blog
+    base_url: 
 
 compress_html:
     ignore:
