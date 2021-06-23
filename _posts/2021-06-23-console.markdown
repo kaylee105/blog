@@ -5,9 +5,9 @@ date: 2021-05-20 09:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- github
-- blog
-- Jekyll
+- console
+- canvas
+- javascript
 
 category: blog
 author: Kaylee
