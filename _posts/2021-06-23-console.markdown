@@ -1,0 +1,492 @@
+---
+title: "웹 브라우저에서의 입출력"
+layout: post
+date: 2021-05-20 09:00
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- github
+- blog
+- Jekyll
+
+category: blog
+author: Kaylee
+star: true
+description: console,canvas
+---
+
+# 웹 브라우저에서의 입출력
+
+
+
+
+
+## 대화상자 표시하기
+
+대화상자란 입력을 하거나 메세지를 확인하기 위해 별도로 여는 창을 말하며 모달(modal)창으로
+
+대화상자가 떠 있는 중에는 부모의 창의 작업이 일시적으로 정지 상태가 되어 부모 창을 조작할 수 없게 된다는 뜻 입니다.
+
+
+
+1. ### alert(경고 대화상자)
+
+   경고 대화상자를 표시
+
+   ```javascript
+   alert('안녕하세요!');
+   ```
+
+   
+
+2. ### prompt(입력 대화상자)
+
+   사용자의 문자열 입력을 받는 대화상자를 표시
+
+   ```javascript
+   var name = prompt("이름을 입력하세요.");
+   //입력받은 문자열은 변수명(name)에 저장된다.
+   
+   var name = prompt("message","default");
+   //초기 입력 값을 지정할 수 있다
+   ```
+
+   ![prompt() dialog in Chrome on OS X](https://mdn.mozillademos.org/files/11303/prompt.png)
+
+   확인 버튼 클릭시 사용자가 입력한 값이 반환되며, 취소 버튼 클릭시 null 값이 반환된다.
+
+   
+
+3. ### confirm(확인 대화상자)
+
+   [확인] 버튼과 [취소] 버튼이 있는 대화상자를 표시
+
+   ```javascript
+   var del = confirm("정말 삭제하시겠습니까?");
+   
+   if (del == true){
+       alert('삭제가 완료되었습니다.')
+   } else {
+       return;
+   }
+   ```
+
+   Confirm 메서드는 논리값을 반환하여 확인 버튼 을누르면 `true`가 반환되고 취소버튼을 누르면 `false`가 반환됩니다.
+
+
+
+## console
+
+Console 객체의 메서드로 콘솔에 값을 출력하는 방법으로 alert에 비해 사용 방법이 간단하고 부모 창의 동작을 간섭하지 않기 때문에 자주 사용됩니다.
+
+- console 객체의 주요 메서드
+
+| 메서드          | 설명                                 |
+| --------------- | ------------------------------------ |
+| console.dir     | 객체의 속성 출력                     |
+| console.error   | 오류 메세지를 출력                   |
+| console.info    | 정보 메세지를 출력                   |
+| console.log     | 일반 메세지를 출력                   |
+| console.time    | 지정한 타이머를 실행                 |
+| console.timeEnd | 지정한 타이머를 멈추고 소요시간 출력 |
+| console.trace   | 스택 트레이스를 출력                 |
+| console.warn    | 경고 메시지를 출력                   |
+
+- console에 텍스트 출력하기
+
+```javascript
+var name = "Tom";
+var height = 165.9;
+console.log("그의 이름은 %s 이며 키는 $f cm 입니다.", name, height);
+//그의 이름은 Tom 이며 키는 165.9 cm 입니다
+```
+
+| 서식 문자열 | 설명                   |
+| ----------- | ---------------------- |
+| %0          | JavaScript 객체를 출력 |
+| %d , %i     | 정수를 출력            |
+| %f          | 부동소수점 수를 출력   |
+| $s          | 문자열을 출력          |
+
+- 객체의 프로퍼티를 목록으로 표시하기
+
+```javascript
+var p = ["사과","오렌지","수박","메론","바나나"]
+console.log(p)
+//(5) ["사과", "오렌지", "수박", "메론", "바나나"]
+console.dir(p)
+//Array(5)
+```
+
+log로 출력시 함수의 코드가 출력되고 dir로 출력시 함수의 속성이 출력된다.
+
+- 타이머
+
+```javascript
+console.time("time");
+alert("확인 버튼을 누르세요");
+console.timeEnd("time");
+```
+
+console.time과 console.timeEnd 메서드를 사용해서 특정 코드의 실행 시간을 측정할 수 있습니다.
+
+
+
+## 이벤트 처리기 등록하기와 타이머 알아보기
+
+- 이벤트 
+
+  사용자가 버튼을 클릭하는 행위처럼 단말기와 애플리케이션이 처리할 수 있는 동작이나 사건
+
+- 이벤트 주도형 프로그램
+
+  이벤트가 발생할 때까지 기다렸다가 이벤트가 발생했을 때 미리 등록해 둔 작업을 수행하는 프로그램
+
+- 이벤트 처리기
+
+  이벤트가 발생했을 때 실행되는 함수
+
+
+
+1. HTML 요소의 속성에 이벤트 처리기 등록하기
+
+   ```html
+   <script>
+   	function displayTime() {
+   		var d = new Date();
+   		console.log("현재 시각은 " + d.toLocaleString() + " 입니다.") ;
+   	}
+   </script>
+   
+   <input type="button" value="click" onclick="displayTime()">
+   ```
+
+   <input type="button" value="click" **`onclick="displayTime()"`**> 
+
+   
+
+2. DOM에서 가져온 HTML 요소에 이벤트 처리기 지정하기
+
+   ```html
+   	<script>
+   		function displayTime() {
+   			var d = new Date();
+   			console.log("현재 시각은 " + d.toLocaleString() + " 입니다.") ;
+   		}
+   		window.onload = function() {
+   			var button = document.getElementById("button");
+   			button.onclick = displayTime;
+   		};
+   	</script>
+   	<input type="button" value="click" id="button">
+   ```
+
+   
+
+3. 타이머
+
+   - `**setTimeOut**` 지정된 시간이 흐른 후에 함수 실행하기
+
+     ```javascript
+     setTimeout(function(){
+         console.log('2초후 실행')
+     },2000) //지연시간
+     ```
+
+   - `**setInterval**` 지정된 시간마다 반복해해서 실행하기
+
+     ```javascript
+     setInterval(function(){
+         console.log('2초마다 실행')
+     },2000) //시간간격
+     ```
+
+     
+
+## HTML 요소를 동적으로 읽고 쓰기
+
+1. **HTML 요소의 innerHTML 프로퍼티로 읽고 쓰기**
+
+   요소 객체의 innerHTML 프로퍼티는 그 HTML요소의 내용을 가리키며 이것으로 HTML 요소의 내용을 읽거나 쓸 수 있습니다.
+
+2. **폼 컨트롤의 입력 값 읽기**
+
+   input 요소 등의 폼 컨트롤 요소를 사용하면 사용자의 입력 값을 자바스크립트 프로그램에서 사용할 수 있습니다.
+
+3. **document.write**
+
+   DOM을 사용하여 HTML 요소를 생성하거나 처리 결과를 HTML 문서로 출력하는것이 일반적이며, 간편한 출력 수단으로 활용할 수 있습니다.
+
+   
+
+## Canvas를 활용한 컴퓨터 그래픽스
+
+Canvas는 웹 브라우저에서 그래픽을 처리하기 위해 추가된 HTML5 구성 요소이다.
+
+원래 애플(Apple)에서 macOS와 사파리 웹 브라우저에서 사용자 인터페이스를 만들기 위해 위젯이나 이미지를 렌더링 할 목적으로 개발한 것이다. Canvas는 주요 웹 브라우저에서 사용할 수 있고, 익스플로러는 `IE9`부터 사용할 수 있다.
+
+Canvas는 2차원 그래픽과 `WebGL`을 사용한 3차원 그래픽을 구현할 수 있다.
+
+
+
+### Canvas의 기본적인 사용법
+
+```html
+<script>
+	window.onload = function() {
+    // 요소의 객체 가져오기
+		var canvas = document.getElementById("mycanvas");
+    // 렌더링 컨텍스트 가져오기
+		var ctx = canvas.getContext("2d");
+    // 그림 그리기
+		ctx.strokeRect(10,10,200,150);
+		ctx.fillRect(50,40,120,90);
+		ctx.clearRect(90,65,40,40);
+	}
+</script>
+
+<!-- canvas 요소배치 -->
+<canvas id="mycanvas" width="640" height="400"></canvas>
+```
+
+1. Canvas 요소를 배치한다
+
+   body 요소에서 canvas를 표시하고자 하는 위치에 canvas 요소를 배치합니다.
+
+2. Canvas 요소의 객체 가져오기
+
+3. 렌더링 컨텍스트 가져오기
+
+4. 그림 그리기
+
+
+
+### 사각형 그리기
+
+**strokeRect(x, y, width, height)** : 사각형 테두리 그리기
+
+**fillRect(x, y, width, height)** : 사각형 채우기
+
+**clearRect(x, y, width, height)** : 사각형 영역을 지우고 투명하게 만들기
+
+```javascript
+window.onload = function() {
+  // canvas 요소 가져오기
+  var canvas = document.getElementById("mycanvas");
+  // canvas 랜더링 컨텍스트 가져오기
+  var ctx = canvas.getContext("2d");
+  // 좌표(10,10)에 가로 200, 높이 50인 사각형 테두리를 그린다
+  ctx.strokeRect(10,10,200,150);
+  // 좌표(50,40)에 가로 120, 높이 90인 사각형을 채운다
+  ctx.fillRect(50,40,120,90);
+  // 좌표(90,65)에 가로 40, 높이 40인 사각형 영역을 삭제한다
+  ctx.clearRect(90,65,40,40);
+}
+```
+
+![img](https://code.d2.co.kr/kaylee/images/canvas/1.png)
+
+
+
+### 패스로 그리기
+
+**beginPath** : 새로운 선 그리기 설정
+
+**moveTo(x, y)** : 펜 이동시키기(시작 점 위치를 이동)
+
+**lineTo(x, y)** : 선으로 연결하기
+
+**Stoke** : 선 그리기
+
+```javascript
+window.onload = function() {
+	// canvas 요소 가져오기
+	var canvas = document.getElementById("mycanvas");
+	// canvas 랜더링 컨텍스트 가져오기
+	var ctx = canvas.getContext("2d");
+	// 그리기
+	ctx.beginPath();
+	ctx.moveTo(60,10);
+	ctx.lineTo(110,100);
+	ctx.lineTo(10,100);
+	ctx.closePath();
+	ctx.stroke();
+	// 삼각형 채우기
+	ctx.beginPath();
+	ctx.moveTo(60,120);
+	ctx.lineTo(110,210);
+	ctx.lineTo(10, 210);
+	ctx.fill();
+}
+```
+
+![img](https://code.d2.co.kr/kaylee/images/canvas/2.png)
+
+### 원호 그리기
+
+**arc(x, y, radius, startAngle, endAngle, anticlockwise)**
+
+(x, y) : 원의 중심 좌표
+
+radius : 원의 반지름
+
+startAngle : 원호의 시작 각도
+
+endAngle : 호의 끝 각도
+
+Anticlockwise : ture면 시계 반대 방향, false면 시계 방향으로 원호를 그림
+
+```javascript
+window.onload = function() {
+    // canvas 요소 가져오기
+    var canvas = document.getElementById("mycanvas");
+    // canvas 랜더링 컨텍스트 가져오기
+    var ctx = canvas.getContext("2d");
+    // 그리기
+    ctx.beginPath();
+    // 시계 방향
+    ctx.arc(100,100,50,0,Math.PI, false);
+    // 테두리
+    ctx.stroke();
+    // 그리기
+    ctx.beginPath();
+    // 시계 반대 방향
+    ctx.arc(100,100,50,0,Math.PI, true);
+    // 테두리
+    ctx.stroke();
+}
+```
+
+
+
+### 원호를 사용하여 둥근 모서리 그리기
+
+**actTo(x1, y1, x2, y2, radius)**
+
+```javascript
+window.onload = function() {
+    // canvas 요소 가져오기
+    var canvas = document.getElementById("mycanvas");
+    // canvas 랜더링 컨텍스트 가져오기
+    var ctx = canvas.getContext("2d");
+    // 그리기
+    ctx.beginPath();
+  	// 이동
+    ctx.moveTo(10,10);
+    ctx.arcTo(250,10,250,160,50);
+  	// 연결
+    ctx.lineTo(250,160);
+  	// 테두리
+    ctx.stroke();
+}
+```
+
+
+
+### 그래픽스 속성 설정하기
+
+**strokeStyle, fillStyle** : 색상 설정
+
+**globalAlpha** : 투명도 설정
+
+**lineWidth** : 선의 두께 설정
+
+```javascript
+// 색상 설정(초기값 #000)
+ctx.fillStyle = "orange";
+ctx.fillStyle = "#FFA500";
+ctx.fillStyle = "rgb(255, 165, 0)";
+ctx.fillStyle = "rgba(255, 165, 0, 1)"; //RGB값에 알파 값을 더한 값
+ctx.fillStyle = "transparent" //투명값
+
+// 투명도 설정(초기값 1)
+ctx.globalAlpha = "0.6";
+
+// 선의 두께 설정(초기값 1)
+ctx.lineWidth = 2;
+```
+
+
+
+**lineCap** : 선의 끝 모양 설정
+
+![img](https://mblogthumb-phinf.pstatic.net/20121013_248/javaking75_1350129833570hHk3C_PNG/2012-10-13_210338.png?type=w2)
+
+```javascript
+ctx.lineCap = "butt" || "round" || "square";
+```
+
+
+
+**lineJoin** : 만나는 모서리
+
+![img](https://mblogthumb-phinf.pstatic.net/20121013_94/javaking75_1350129908234rJu74_PNG/2012-10-13_210454.png?type=w2)
+
+```javascript
+ctx.lineJoin = "bevel" || "round" || "miter";
+```
+
+### 
+
+### 그림 읽어 들이기
+
+```javascript
+window.onload = function() {
+	// canvas 요소의 객체 가져오기
+	var canvas = document.getElementById("mycanvas");
+	// canvas의 그리기 컨텍스트 가져오기
+	var ctx = canvas.getContext("2d");
+  
+	// 이미지 객체 생성하기
+	var img = new Image();
+  // 이미지의 소스를 URL로 지정
+	img.src = "./cat.jpg";
+	// 이미지를 읽어 들인 후,
+	img.onload = function() {
+    // canvas에 그리기
+		ctx.drawImage(img,0,0);
+	};
+};
+```
+
+
+
+### 픽셀 제어하기
+
+**getImageData** : canvas 이미지의 픽셀 값(RGBA 값)을 제어 할 수 있는 imageData 객체를 반환한다.
+
+**createImageData** : 새로운 imageData 객체를 생성
+
+**putImageData** : imageData  객체의 이미지를 렌더링 컨텍스트에 그립니다.
+
+
+
+## canvas를 활용한 애니메이션
+
+https://codepen.io/rachsmith/pen/fBoiD
+
+https://codepen.io/andrewwwcollins/pen/KQeXrX
+
+https://codepen.io/y_endo/pen/gObOxoM
+
+https://codepen.io/ilithya/pen/mddaOzB
+
+https://codepen.io/JavaScriptJunkie/pen/pPQbQy
+
+
+
+## 실습
+
+![img](https://code.d2.co.kr/kaylee/images/canvas/4.png)
+
+view-source:https://code.d2.co.kr/kaylee/canvas.html
+
+
+
+
+
+## 참고
+
+[Canvas  Images]: https://github.com/jewdri-kim/javascriptStudy/blob/master/CANVAS/Canvas-Images.md
+[캔버스(canvas) 기본 사용법]: https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Basic_usage
+
