@@ -1,7 +1,7 @@
 ---
 title: "웹 브라우저에서의 입출력"
 layout: post
-date: 2021-05-20 09:00
+date: 2021-06-23 09:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
