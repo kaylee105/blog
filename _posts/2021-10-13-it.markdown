@@ -14,7 +14,7 @@ author: Kaylee
 star: true
 description: it,프로그래밍,네트워크,운영체제,api,json,데이터베이스,프레임워크,라이브러리
 ---
-# 비전공자를 위한 이해할 수 있는 IT지식
+
 
 
 
