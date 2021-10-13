@@ -114,11 +114,13 @@ API문서 : 데이터가 서버 or 클라이언트에 있는지 유무를 구분
 
 
 
+## 참고
 
+[쉽게 이해하는 네트워크 - 서버, 클라이언트와 웹 서비스](https://better-together.tistory.com/60)
 
+[API, Json](https://brunch.co.kr/@businessinsight/65)
 
-[쉽게 이해하는 네트워크 - 서버, 클라이언트와 웹 서비스] https://better-together.tistory.com/60
-[API, Json] https://brunch.co.kr/@businessinsight/65
-[데이터베이스와 이미지 처리] https://jangsang.tistory.com/29
-[데이터베이스] http://tcpschool.com/mysql/DB
+[데이터베이스와 이미지 처리](https://jangsang.tistory.com/29)
+
+[데이터베이스](http://tcpschool.com/mysql/DB)
 
