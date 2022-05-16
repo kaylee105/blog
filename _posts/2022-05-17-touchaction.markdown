@@ -10,10 +10,8 @@ tag:
 - 퍼블리싱
 - css
 - touch-action
-
 category: blog
-author: Kaylee
+author: kaylee
 star: true
-description: it,퍼블리셔,퍼블리싱,csstouch-action
+description: it 퍼블리셔 퍼블리싱 csstouch-action
 ---
-
