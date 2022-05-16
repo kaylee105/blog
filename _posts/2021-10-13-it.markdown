@@ -17,7 +17,7 @@ tag:
 
 category: blog
 author: Kaylee
-star: true
+star: false
 description: it,프로그래밍,네트워크,운영체제,api,json,데이터베이스,프레임워크,라이브러리
 ---
 
