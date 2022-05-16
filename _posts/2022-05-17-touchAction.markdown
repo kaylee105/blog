@@ -53,8 +53,7 @@ touch-action: manipulation;
 touch-action: pan-y pinch-zoom; 
 ```
 
-codepen : https://codepen.io/witblog/pen/WNjOjMr
-
+[codepen](https://codepen.io/witblog/pen/WNjOjMr)
 
 
 
