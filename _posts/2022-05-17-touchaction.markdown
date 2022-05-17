@@ -24,7 +24,7 @@ description: it 퍼블리셔 퍼블리싱 csstouch-action
 
 터치 이벤트의 처리는 브라우저가 담당하는 영역이다. Touch-action 속성을 통하여 요소 내에서 브라우저가 처리할 터치 액션의 목록을 지정할 수 있다.
 
-터치를 사용한 **스크롤(paning)**과 여러 손가락을 사용한 **확대/축소(pinch zoom)**가 존재한다.
+터치를 사용한 스크롤(paning)과 여러 손가락을 사용한 확대/축소(pinch zoom)가 존재한다.
 
 ```css
 /* 기본 값, 모든 터치 이벤트를 활성화 */
@@ -52,7 +52,7 @@ touch-action: manipulation;
 touch-action: pan-y pinch-zoom; 
 ```
 
-[codepen](https://codepen.io/witblog/pen/WNjOjMr)
+[codepen](http://code.d2.co.kr/kaylee/220517.html)
 
 
 
