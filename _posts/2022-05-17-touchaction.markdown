@@ -52,7 +52,7 @@ touch-action: manipulation;
 touch-action: pan-y pinch-zoom; 
 ```
 
-[codepen](http://code.d2.co.kr/kaylee/220517.html)
+[example](http://code.d2.co.kr/kaylee/220517.html)
 
 
 
