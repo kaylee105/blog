@@ -26,7 +26,7 @@ description: it,프로그래밍,네트워크,운영체제,api,json,데이터베�
 
 일하면서 한번 쯤 들어봤을 프로그래밍 언어, 운영체제, 네트워크, API, JSON, 데이터베이스, 이미지 처리, 프레임워크, 라이브러리, 깃(git), 디자인 이슈 등 IT산업의 전체적인 큰 그림을 그릴 수 있게 정리해보았습니다.
 
-![](https://code.d2.co.kr/kaylee/images/it/01.jpg)
+![](https://aws-code.d2.co.kr/kaylee/images/it/01.jpg)
 
 
 
@@ -44,7 +44,7 @@ description: it,프로그래밍,네트워크,운영체제,api,json,데이터베�
 
 네트워크에서 데이터를 주는 컴퓨터를 서버(server), 데이터를 요청하고 받는 컴퓨터를 클라이언트(client)라고 한다. 즉 네트워크로 연결된 컴퓨터 중 서비스를 제공하는 쪽을 서버라 부르고 서비스를 요청하고 받는(사용하는) 쪽을 고객, 클라이언트라고 부른다.
 
-![](https://code.d2.co.kr/kaylee/images/it/02.png)
+![](https://aws-code.d2.co.kr/kaylee/images/it/02.png)
 
 ## API와 JSON
 
@@ -52,7 +52,7 @@ API는 클라이언트, 서버와 같은 서로 다른 프로그램에서 요청
 
 요청을 보내는 쪽과 응답을 주는 쪽이 나뉘어져 있는대, 사용자의 스마트폰(클라이언트 컴퓨터)에 요청을 보내고, 서버 컴퓨터는 요청을 받아서 응답을 준다. 이렇게 하려면 응답을 주는 쪽에서 사전에 '여기로 요청을 보내면 이러한 응답을 주고, 저기로 요청을 보내면 저러한 응답을 줄께' 라고 정의 해놔야 한다.
 
-![](https://code.d2.co.kr/kaylee/images/it/03.png)
+![](https://aws-code.d2.co.kr/kaylee/images/it/03.png)
 
 '놀란아 영화좀' 이라고 요청을 하면 크게 4가지 요소로 나눌 수 있다. CRUD라고 불리는 4가지 요청은 데이터를 다룰 때 기준이 되는 요청으로, C는 create의 올리는, R은 read의 불러오는, U는 update 바꾸는, D는 delete의 지우는 요청을 뜻한다. 데이터를 다룰 때 큰틀에서 보면 이 4가지의 요청에 속한다. 
 
@@ -109,9 +109,9 @@ API문서 : 데이터가 서버 or 클라이언트에 있는지 유무를 구분
 - 그래픽 사용자 인터페이스(GUI)에서 재사용하기 쉽게 버튼,테이블 같은 구성 요소를 호출해서 쓸수 있도록 분리해두었다면 라이브러리
 - 객체지향 프로그래밍은 기본적으로 각 기능마다 함수화하는 것으로 클래스 라이브러리라고 할수 있다.
 
-![](https://code.d2.co.kr/kaylee/images/it/04.png)
+![](https://aws-code.d2.co.kr/kaylee/images/it/04.png)
 
-![](https://code.d2.co.kr/kaylee/images/it/05.png)
+![](https://aws-code.d2.co.kr/kaylee/images/it/05.png)
 
 
 
