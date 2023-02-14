@@ -1,5 +1,5 @@
 ---
-title: "responsive"
+title: "반응형 웹(Responsive Web)"
 layout: post
 date: 2023-02-10 21:09
 image: /assets/images/markdown.jpg
@@ -25,10 +25,16 @@ description: responsive web, Media Queries , viewport
 
 > 다양한 화면의 폭에 따라 유동적으로 레이아웃이 변화하는 웹
 
+
+
 https://mediaqueri.es/
+
+
 
 - 반응형웹 : 모든 화면에 하나의 템플릿으로 제작
 - 적응형웹 : 지원할 디바이스(화면)에 따라 별도의 템플릿 제작
+
+
 
 ![img](https://blog.kakaocdn.net/dn/qW5iW/btqC9NQrbst/VUCG10F0KtElkx6QMxdkv1/img.gif)반응형(Responsive)과 적응형(Adaptive)웹 차이 [출처]https://danielswanick.com/ 
 
@@ -98,9 +104,7 @@ https://mediaqueri.es/
 
      
 
-   ![img](https://blogfiles.pstatic.net/MjAyMTAxMDlfNSAg/MDAxNjEwMTk0NTM5MzAy.XQJwK3Y7IIMYeMDyxg7aF30yzzntGybGphIx1EjOvxog.2HVYRrrHpkXCl3ZxM7y25q8VOe4Ux2vwWksyjuh5I64g.PNG.yujini428/Untitled.png)
-
-   ![img](https://blogfiles.pstatic.net/MjAyMTAxMDlfMjA1/MDAxNjEwMTk0Njc4Mjky.3ZoF7KF0WKgynM7vxxJlm8qAgkNQKTXuHBkNgTbwEzkg.Fyu215Fri8WJMwN0cFXgTjfo_ljcYpXtoyEhyVYPvTIg.PNG.yujini428/Untitled_(2).png)
+   ![img]([[https://blogfiles.pstatic.net/MjAyMTAxMDlfNSAg/MDAxNjEwMTk0NTM5MzAy.XQJwK3Y7IIMYeMDyxg7aF30yzzntGybGphIx1EjOvxog.2HVYRrrHpkXCl3ZxM7y25q8VOe4Ux2vwWksyjuh5I64g.PNG.yujini428/Untitled.png](https://aws-code.d2.co.kr/kaylee/images/responsive.jpg)](https://aws-code.d2.co.kr/kaylee/images/responsive.jpg))
 
    
 
@@ -120,7 +124,7 @@ https://mediaqueri.es/
 
    고정된 px이 아닌 em이나 %를 사용한다.
 
-   https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4
+   [https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4](https://aws-code.d2.co.kr/kaylee/images/mio-design.mp4)
 
 2. 유연한 이미지(fluid/flexible images)
 
