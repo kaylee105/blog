@@ -39,7 +39,7 @@ description: responsive web, Media Queries , viewport
 
 ![img](https://blog.kakaocdn.net/dn/qW5iW/btqC9NQrbst/VUCG10F0KtElkx6QMxdkv1/img.gif)
 
-[^반응형(Responsive)과 적응형(Adaptive)웹 차이]: 
+​ 반응형(Responsive)과 적응형(Adaptive)웹 차이
 
 
 
