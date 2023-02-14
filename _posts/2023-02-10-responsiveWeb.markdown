@@ -125,8 +125,8 @@ https://mediaqueri.es/
 1. 유동형 그리드(fluid grids)
 
    고정된 px이 아닌 em이나 %를 사용한다.
-
-   <iframe width="560" height="310" src="https://aws-code.d2.co.kr/kaylee/images/mio-design.mp4" frameborder="0" allowfullscreen></iframe>
+   
+   https://aws-code.d2.co.kr/kaylee/images/mio-design.mp4
    
    
 
