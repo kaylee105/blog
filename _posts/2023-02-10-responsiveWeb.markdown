@@ -26,8 +26,7 @@ description: responsive web, Media Queries , viewport
 > 다양한 화면의 폭에 따라 유동적으로 레이아웃이 변화하는 웹
 
 
-
-https://mediaqueri.es/
+[반응형 웹 사이트 보기](https://mediaqueri.es/)
 
 
 
@@ -149,14 +148,12 @@ https://mediaqueri.es/
    
 
    + 부트스트랩 레이아웃
-
-   https://colorlib.com//polygon/adminty/default/index.html
+[bootstrap](https://colorlib.com//polygon/adminty/default/index.html)
 
    
 
    + 머티리얼 디자인
-
-   https://m2.material.io/design/layout/responsive-layout-grid.html#columns-gutters-and-margins
+   [material](https://m2.material.io/design/layout/responsive-layout-grid.html#columns-gutters-and-margins)
 
 
 
@@ -170,8 +167,8 @@ https://mediaqueri.es/
 
 * 참고사이트
 
-https://uipac.com/45
+[https://uipac.com/45](https://uipac.com/45)
 
-https://hyoni-k.tistory.com/121
+[https://hyoni-k.tistory.com/121](https://hyoni-k.tistory.com/121)
 
-https://brunch.co.kr/@clay1987/134
+[https://brunch.co.kr/@clay1987/134](https://brunch.co.kr/@clay1987/134)
