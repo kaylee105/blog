@@ -36,7 +36,9 @@ https://mediaqueri.es/
 
 
 
-![img](https://blog.kakaocdn.net/dn/qW5iW/btqC9NQrbst/VUCG10F0KtElkx6QMxdkv1/img.gif)반응형(Responsive)과 적응형(Adaptive)웹 차이 [출처]https://danielswanick.com/ 
+![img](https://blog.kakaocdn.net/dn/qW5iW/btqC9NQrbst/VUCG10F0KtElkx6QMxdkv1/img.gif)
+
+반응형(Responsive)과 적응형(Adaptive)웹 차이
 
 
 
@@ -104,7 +106,7 @@ https://mediaqueri.es/
 
      
 
-   ![img]([[https://blogfiles.pstatic.net/MjAyMTAxMDlfNSAg/MDAxNjEwMTk0NTM5MzAy.XQJwK3Y7IIMYeMDyxg7aF30yzzntGybGphIx1EjOvxog.2HVYRrrHpkXCl3ZxM7y25q8VOe4Ux2vwWksyjuh5I64g.PNG.yujini428/Untitled.png](https://aws-code.d2.co.kr/kaylee/images/responsive.jpg)](https://aws-code.d2.co.kr/kaylee/images/responsive.jpg))
+     ![img](https://aws-code.d2.co.kr/kaylee/images/responsive.jpg)
 
    
 
@@ -124,13 +126,19 @@ https://mediaqueri.es/
 
    고정된 px이 아닌 em이나 %를 사용한다.
 
-   [https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4](https://aws-code.d2.co.kr/kaylee/images/mio-design.mp4)
+   [https://aws-code.d2.co.kr/kaylee/images/mio-design.mp4](https://aws-code.d2.co.kr/kaylee/images/mio-design.mp4)
+   
+   
 
 2. 유연한 이미지(fluid/flexible images)
 
    유동형 그리드와 마찬가지로, 고정된 px이 아닌 em과 %를 이용하는 방법으로, max-width를 100%로, height를 auto로 설정하는 방법으로 화면 폭에 따라 가로/세로 길이가 줄었다 늘어나는 방법
 
+   
+
    ![img](https://i0.wp.com/knulab.com/wp-content/uploads/2019/02/02_Relative-Units-vs-Static-Units-1.gif?resize=1100%2C400&ssl=1)
+
+   
 
 3. 반응형 레이아웃(responsive layouts)
 
